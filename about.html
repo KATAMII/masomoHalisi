@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masomo Halisi College</title>
+    <link rel="icon" href="../images/college-icon.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navigation -->
+    <nav>
+      <i class="fa fa-graduation-cap fa-4x"></i>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="menu.jpg"  alt="">
+        </div>
+    </nav>
+
+    <!--Home-->
+    <section id="about-home">
+        <h2>About Masomo Halisi College</h2>
+    </section>
+
+    <!--About-->
+    <section id="about-container">
+        <div class="about-img">
+            <img src="html5-img.svg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Welcome to Masomo Halisi College, Enhance your skills with the best Online and on-campus Courses</h2>
+            <p>We have very many popular courses, Check out the list below
+                ...A course like this one introduces you to the vast world of programming and web development.
+            </p>
+            <div class="about-fea">
+                <img src="../images/22.png" alt="">
+                <div class="fea-text">
+                    <h5>400+ Courses</h5>
+                    <p>You can start and finish one of this popular courses in our site</p>
+                </div>
+            </div>
+
+            <div class="about-fea">
+                <img src="../images/11.png" alt="">
+                <div class="fea-text">
+                    <h5>Lifetime Access</h5>
+                    <p>You can start and finish one of this popular courses in our site</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--features-->
+    <section id="features">
+      <h1>How We Make Your Education Better</h1>
+      <p>We offer scholarship factilitation to the needy and bright students, 
+        online classes for those who want to study from anywhere and certifications that are recognized everywhere around the globe.
+      </p>
+      <div class="fea-base">
+          <div class="fea-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Schorlaship Facility</h3>
+              <p>We offer various scholarships and bursaries to students who qualify based on academic performance,
+                 financial need, or other factors. Apply online or contact our financial aid office for details.</p>
+
+          </div>
+          <div class="fea-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Online Courses</h3>
+            <p>We partner with Dell Technologies to provide you with online courses that enhance your skills and knowledge in the latest technologies.
+               Learn from industry experts, earn certificates, and boost your employability.</p>
+
+        </div>
+        <div class="fea-box">
+          <i class="fa-solid fa-award"></i>
+          <h3>Global Certification</h3>
+          <p>We help you obtain internationally recognized certifications that validate your skills and knowledge in various fields. 
+            You can choose from a range of certification programs offered by our partners and prepare for the exams with our guidance.</p>
+
+      </div>
+      </div>
+  </section>
+
+    <!--trust-->
+    <section id="trust">
+      <h1>Accredited By</h1>
+      <p> As a college, we have been accredited by the Ministry of Education, Kenya. <br>
+         We also work hand in hand with globally recognized universities all around the world.
+      </p>
+      <div class="trust-img">
+        <img src="../images/ministry-of-education.jpeg" alt="">
+        <img src="../images/college-icon.jpeg" alt="">
+        <img src="../images/ministry-of-education.jpeg" alt="">
+        <img src="../images/college-icon.jpeg" alt="">
+        <img src="../images/ministry-of-education.jpeg" alt="">
+        <img src="../images/college-icon.jpeg" alt="">
+      </div>
+
+    </section>
+    
+    <!--footer-->
+
+    <footer>
+      <a href="about.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;"> About Us</a>
+      <a href="blog.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;">Our blog</a>
+      <a href="course.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;"> Our Courses</a>
+      <a href="contact.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;">Contact Us Today</a>
+
+      <div class="footer-col">
+        <h3>Newsletters</h3>
+        <form method="POST" action="../php files/newsletter.php">
+        <p>You can trust us.We only send promo offers</p>
+        <div class="subscribe">
+          <input type="email" name="email" placeholder="Your Email Address">
+          <button type="submit" style="background-color: yellow; color: black; font-size: 30px; font-weight:bold; text-decoration: none;font-family: 'Courier New', Courier, monospace;" name="submit" value="submit" >SUBSCRIBE</button>
+        </div>
+      </form>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 All rights Reserved | Masomo Halisi College</p>
+        <div class="pro-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+
+        </div>
+      </div>
+
+
+
+    </footer>
+
+    <script>
+      $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+      })
+      $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+      })
+    </script>
+    
+</body>
+</html>

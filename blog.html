@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASOMO HALISI COLLEGE</title>
+    <link rel="icon" href="../images/college-icon.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navigation -->
+    <nav>
+      <i class="fa fa-graduation-cap fa-4x"></i>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <!--Home-->
+    <section id="about-home">
+        <h2>A blog on our Tech sector</h2>
+    </section>
+    
+    <section id="blog-container">
+        <div class="blogs">
+            <div class="post">
+                <img src="../images/b2.jpeg" alt="">
+                <h3>Learn Web Development in the Easiest way</h3>
+                <p>Discover how to create stunning websites with our simple and practical web development course.
+                   Learn HTML, CSS, JavaScript, and more from scratch.
+                   No prior experience required. Start your journey as a web developer today.</p>
+                <a href="post.html">Read More</a>
+            </div>
+            <div class="post">
+              <img src="../images/b1.png" alt="">
+              <h3>Tech is the future, so secure yours today with one of our courses</h3>
+              <p>Learn the latest skills and technologies in IT, data science, software development, and more.
+                 Choose from a variety of online courses and certificates from top universities and companies.
+                 Advance your career or start a new one with our tech courses.</p>
+              <a href="#">Read More</a>
+          </div>
+          <div class="post">
+            <img src="../images/b3.jpg" alt="">
+            <h3>What is tech, and why choose it?</h3>
+            <p>Technology is the application of scientific knowledge to solve practical problems and create new possibilities.
+               Technology has transformed every aspect of our lives, from communication, education, health, entertainment, business, and more.
+               Technology is also constantly evolving and advancing, creating new challenges and opportunities for the future.
+               Taking a course with us can help you learn the skills and knowledge that are essential for the modern world. Whether you want to pursue a career in IT, data science, software development, or any other tech-related field, or you just want to enhance your personal or professional life with technology, we have the right course for you. You can choose from a variety of online courses and certificates from top universities and companies, and learn at your own pace and convenience.
+                You can also interact with other learners and instructors, and get feedback and support along the way </p>
+            <a href="#">Read More</a>
+        </div>
+
+
+
+
+        </div>
+
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#">Web Development</a>
+            
+            <hr>
+            <a href="#">Web Desigb</a>
+            
+            <hr>
+            <a href="#">App Development</a>
+            
+            <hr>
+            <a href="#">Frontend Web</a>
+            
+            <hr>
+            <a href="#">Python Programming</a>
+            
+            <hr>
+            <a href="#">Javascript Hack</a>
+            <hr>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <footer>
+      <a href="about.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;"> About Us</a>
+      <a href="blog.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;">Our blog</a>
+      <a href="course.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;"> Our Courses</a>
+      <a href="contact.html" style="color: aliceblue; font-size: medium; font-weight: bold; text-decoration: none;">Contact Us Today</a>
+
+      <div class="footer-col">
+        <h3>Newsletters</h3>
+        <form method="POST" action="../php files/newsletter.php">
+        <p>You can trust us.We only send promo offers</p>
+        <div class="subscribe">
+          <input type="email" name="email" placeholder="Your Email Address">
+          <button type="submit" style="background-color: yellow; color: black; font-size: 30px; font-weight:bold; text-decoration: none;font-family: 'Courier New', Courier, monospace;" name="submit" value="submit" >SUBSCRIBE</button>
+        </div>
+      </form>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 All rights Reserved | Masomo Halisi College</p>
+        <div class="pro-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+
+        </div>
+      </div>
+
+
+
+    </footer>
+
+    <script>
+      $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+      })
+      $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+      })
+    </script>
+    
+</body>
+</html>

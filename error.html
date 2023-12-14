@@ -1,0 +1,45 @@
+<html>
+<head>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .error {
+      color: #ff0000;
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .message {
+      color: #333333;
+      font-size: 24px;
+    }
+
+    .link {
+      color: #0000ff;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="error">Oops!</h1>
+    <p class="message">Something went wrong. We are sorry for the inconvenience.</p>
+    <p class="message">The error message is: <?php echo $_GET['msg']; ?></p>
+    <p class="link"><a href="http://localhost/college%20website/index.html">Go back to home page</a></p>
+  </div>
+</body>
+</html>
